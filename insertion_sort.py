@@ -52,7 +52,7 @@ def halvenShellSort(nums_list):
             sorted_sub_array = gapInsertionSort(nums_list,start_num,gap)
             for j in range(len(sorted_sub_array)):
                 nums_list[start_num+(gap*j)] = sorted_sub_array[j]
-        print ("After insertion sort with gap of ",gap,". The list is", nums_list)
+        #print ("After insertion sort with gap of ",gap,". The list is", nums_list)
         gap = gap//2
 
     return nums_list
@@ -62,5 +62,4 @@ A= [1,9,2,5,3,6,7,4,8,2]
 print(insertionSort(A)) # [1, 2, 2, 3, 4, 5, 6, 7, 8, 9]
 
 # testing halvenShellSort
-B= [54,26,93,17,77,31,44,55,20,22,25,67,1,2]
-print(halvenShellSort(B))
+print(halvenShellSort(A))
